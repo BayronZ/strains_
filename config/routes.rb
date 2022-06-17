@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
   resources :wines
   resources :strains
-  root "wines#index"
+  root "home#index"
 end
